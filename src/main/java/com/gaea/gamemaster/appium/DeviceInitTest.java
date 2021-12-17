@@ -3,21 +3,17 @@ package com.gaea.gamemaster.appium;
 import com.gaea.gamemaster.publicTool.ExcelTest;
 import com.gaea.gamemaster.publicTool.FileManage;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.imagecomparison.SimilarityMatchingOptions;
 import io.appium.java_client.imagecomparison.SimilarityMatchingResult;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.io.File;
-import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.util.Base64;
@@ -31,9 +27,9 @@ public class DeviceInitTest {
 
         AppiumDriver<WebElement> driver = initDriver();
 
-/*        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= 1000; i++) {
             getScreenImage(driver);
-        }*/
+        }
 
     }
 

@@ -103,7 +103,7 @@ public class AppiumManager {
                 opts.withEnabledVisualization();
                 File newBaseline = driver.getScreenshotAs(OutputType.FILE);
                 FileUtils.copyFile(newBaseline, new File(getScreenImageXpath(positionValue + "-截屏")));
-                Thread.sleep(1200);
+                Thread.sleep(500);
                 File file1 = new File(getImageXpath(positionValue));
                 File file2 = new File(getScreenImageXpath(positionValue + "-截屏"));
                 SimilarityMatchingResult res = driver.getImagesSimilarity(file1, file2, opts);
@@ -224,7 +224,7 @@ public class AppiumManager {
 
                     case "click":
                         element.click();
-                        Thread.sleep(4500);
+                        Thread.sleep(2000);
                         break;
 
                     case "longPress":
